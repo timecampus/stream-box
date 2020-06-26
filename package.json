@@ -1,0 +1,23 @@
+{
+  "name": "stream-box",
+  "version": "1.0.0",
+  "description": "This is a multi-streaming chat application for streamers",
+  "main": "twitchchat.js",
+  "dependencies": {
+    "tmi.js": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timecampus/stream-box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timecampus/stream-box/issues"
+  },
+  "homepage": "https://github.com/timecampus/stream-box#readme"
+}
