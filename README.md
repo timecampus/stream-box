@@ -9,3 +9,7 @@ To build:
 1. Server
 2. Client
 3. Plugin
+
+### References
+
+[https://medium.com/@jonnykalambay/doing-it-live-learn-youtubes-api-by-making-a-chatbot-d55e2156715f](https://medium.com/@jonnykalambay/doing-it-live-learn-youtubes-api-by-making-a-chatbot-d55e2156715f)
