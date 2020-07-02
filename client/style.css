@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#streamChatBox {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color:white;
+    padding: 10px;
+    margin:10px;
+    width: 450px;
+    height: 70px;
+}
+
+#chatDisplayWindow {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    margin:10px;
+    width: 450px;
+    height: 500px;
+}
+
+#sendButton {
+    padding: 10px;
+    background-color: #01a9b4;
+    color: white;
+    border-radius: 10px;
+    float: right;
+}
+
+#chatWindow {
+    width: 550px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin:10px;
+}
