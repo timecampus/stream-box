@@ -3,11 +3,11 @@ const tmi = require('tmi.js');
 // Define configuration options
 const opts = {
   identity: {
-    username: "<username>",
-    password: "<twitchtoken>"
+    username: process.env.TWITCH_USERNAME,
+    password: process.env.TWITCH_TOKEN
   },
   channels: [
-    "<channelname>"
+    process.env.TWITCH_CHANNEL
   ]
 };
 // Create a client with our options

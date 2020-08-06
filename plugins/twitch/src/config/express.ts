@@ -20,7 +20,7 @@ let express = require('express'),
     glob = require('glob');
 
 import { config } from '../config/config';
-import { log } from '../app/utils/error.utils';
+// import { log } from '../app/utils/error.utils';
 
 // let schema = require('../schema/schema').schema;
 
@@ -123,21 +123,21 @@ module.exports = function () {
     app.use(express.static(path.join(__dirname, '../app/public')));
 
     // Assume 404 since no middleware responded
-    app.use(function (req, res) {
-        log('error', {
-            message: 'Page Not Found - ' + req.url,
-            payload: req.body || req.query
-        });
-        res.render(path.join(__dirname, '../app/views/error/404'), {
-            head: {
-                title: 'Page Not Found'
-            },
-            content: {
-                title: 'OOPS!',
-                description: 'Page Not Found. Error Code: 404'
-            }
-        });
-    });
+    // app.use(function (req, res) {
+    //     log('error', {
+    //         message: 'Page Not Found - ' + req.url,
+    //         payload: req.body || req.query
+    //     });
+    //     res.render(path.join(__dirname, '../app/views/error/404'), {
+    //         head: {
+    //             title: 'Page Not Found'
+    //         },
+    //         content: {
+    //             title: 'OOPS!',
+    //             description: 'Page Not Found. Error Code: 404'
+    //         }
+    //     });
+    // });
 
     let server;
 

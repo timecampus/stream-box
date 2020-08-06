@@ -1,13 +1,91 @@
 <html>
     <head>
         <title>Streambox</title>
-        <link rel="stylesheet" href="/style.css" />
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #streamWindows {
+                float: right;
+                padding: 10px;
+                width: 700px;
+            }
+
+            .streamVideo {
+                float: left;
+                margin: 10px;
+            }
+
+            .chatmsg {
+                background-color: brown;
+                color: white;
+                padding: 5px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            .incomingchatmsg {
+                background-color: green;
+                color: white;
+                padding: 5px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            #streamChatBox {
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+                border-radius: 10px;
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                width: 450px;
+                height: 70px;
+            }
+
+            #chatDisplayWindow {
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+                border-radius: 10px;
+                background-color: black;
+                color: white;
+                padding: 10px;
+                margin: 10px;
+                width: 450px;
+                height: 500px;
+            }
+
+            #sendButton {
+                padding: 10px;
+                background-color: #01a9b4;
+                color: white;
+                border-radius: 10px;
+                float: right;
+            }
+
+            #chatWindow {
+                float: left;
+                width: 550px;
+                border-style: solid;
+                padding: 10px;
+                border-radius: 10px;
+                border-width: 1px;
+                margin: 10px;
+            }
+        </style>
     </head>
 
     <body>
         <div id="chatWindow">
             <div id="chatDisplayWindow">
                 <ul id="chatMessages"></ul>
+                Helkkjkjr
                 Hello there... Your chat messages will be displayed here..
             </div>
             <form>
@@ -19,22 +97,16 @@
 
         <div id="streamWindows">
             <div class="streamVideo">
-
-                <!-- TWITCH STREAM EMBED -->
-
                 <h3 align="center">Twitch</h3>
                 <div id="twitchStreamWindow"></div>
             </div>
             <div class="streamVideo">
-
-                <!-- YOUTUBE STREAM EMBED -->
-
                 <h3 align="center">Youtube</h3>
                 <div id="youtubeStreamWindow">
                     <iframe
                         width="300"
                         height="300"
-                        src="https://www.youtube.com/embed/6YCjZ6D199c"
+                        src="https://www.youtube.com/embed/36FNStMU_Z8"
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
@@ -91,5 +163,17 @@
                 window.scrollTo(0, document.body.scrollHeight);
             });
         };
+        // $(function () {
+        //   var socket = io();
+        //   $('form').submit(function(){
+        //     socket.emit('chat message', $('#m').val());
+        //     $('#m').val('');
+        //     return false;
+        //   });
+        //   socket.on('chat message', function(msg){
+        //     $('#messages').append($('<li>').text(msg));
+        //     window.scrollTo(0, document.body.scrollHeight);
+        //   });
+        // });
     </script>
 </html>

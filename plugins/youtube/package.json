@@ -12,7 +12,7 @@
         "watch": "tsc -w -p ./",
         "debug": "npx cross-env NODE_ENV=development nodemon --nolazy ./dist/server.js",
         "docker-debug": "npm run build && docker-compose up",
-        "lint": "npx eslint --ext=.ts .",
+        "lint": "",
         "test": "npx tsc && ava ./dist/tests",
         "document": "npx typedoc",
         "format": "prettier --write '**/*.{ts,js,css,md}'",

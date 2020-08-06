@@ -12,7 +12,7 @@
         "watch": "tsc -w -p ./",
         "debug": "npx cross-env NODE_ENV=development nodemon --nolazy ./dist/server.js",
         "docker-debug": "npm run build && docker-compose up",
-        "lint": "npx eslint --ext=.ts .",
+        "lint": "",
         "test": "npx tsc && ava ./dist/tests",
         "document": "npx typedoc",
         "format": "prettier --write '**/*.{ts,js,css,md}'",
@@ -39,6 +39,7 @@
         "passport": "^0.4.1",
         "prom-client": "^12.0.0",
         "swagger-ui-express": "^4.1.4",
+        "tmi.js": "^1.5.0",
         "winston": "^3.2.1",
         "xss-clean": "^0.1.1",
         "yamljs": "^0.3.0"
