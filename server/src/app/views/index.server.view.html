@@ -44,7 +44,7 @@
         </div>
     </body>
 
-    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.2.0/socket.io.min.js"></script>
 
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
@@ -63,7 +63,7 @@
         };
 
         window.onload = function () {
-            var socket = io('ws://localhost:8085');
+            var socket = io('ws://192.168.30.10');
             console.log('Onload here..');
             document.querySelector('#sendButton').onclick = function () {
                 var message = document.querySelector('#streamChatBox')

@@ -15,9 +15,9 @@
         "lint": "",
         "test": "npx tsc && ava ./dist/tests",
         "document": "npx typedoc",
-        "format": "prettier --write '**/*.{ts,js,css,md}'",
+        "format": "prettier --write **/*.{ts,js,css,md}",
         "start": "node ./dist/server.js",
-        "start-dev": "npm run format && npm run lint && npx cross-env NODE_ENV=development nodemon ./dist/server.js",
+        "start-dev": "npm run lint && npx cross-env NODE_ENV=development nodemon ./dist/server.js",
         "start-alpha": "npm run build && npm run lint && npx cross-env NODE_ENV=alpha node ./dist/server.js",
         "start-secure": "npm run build && npm run lint && npx cross-env NODE_ENV=secure node ./dist/server.js"
     },
