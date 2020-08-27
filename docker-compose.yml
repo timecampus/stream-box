@@ -5,7 +5,7 @@ services:
     env_file:
       - ./server/.env
     build:
-      context: .
+      context: ./server
       dockerfile: Dockerfile
       args:
         app_port: 8085
@@ -25,7 +25,7 @@ services:
     env_file:
       - ./plugins/youtube/.env
     build:
-      context: .
+      context: ./plugins/youtube
       dockerfile: Dockerfile
       args:
         app_port: 8090
@@ -46,7 +46,7 @@ services:
     env_file:
       - ./plugins/twitch/.env
     build:
-      context: .
+      context: ./plugins/twitch
       dockerfile: Dockerfile
       args:
         app_port: 8095
